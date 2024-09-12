@@ -1,0 +1,19 @@
+Dump of assembler code for function _start:
+   0x08049040 <+0>:     mov    $0x4,%eax
+   0x08049045 <+5>:     mov    $0x1,%ebx
+   0x0804904a <+10>:    mov    $0x8049000,%ecx
+   0x0804904f <+15>:    mov    $0x21,%edx
+   0x08049054 <+20>:    int    $0x80
+   0x08049056 <+22>:    mov    $0x1,%eax
+   0x0804905b <+27>:    mov    $0x0,%ebx
+   0x08049060 <+32>:    int    $0x80
+
+   Dump of assembler code for function main:
+   0x0000000000001149 <+0>:     endbr64 
+   0x000000000000114d <+4>:     push   %rbp
+   0x000000000000114e <+5>:     mov    %rsp,%rbp
+   0x0000000000001151 <+8>:     lea    0xeb0(%rip),%rdi        # 0x2008
+   0x0000000000001158 <+15>:    callq  0x1050 <puts@plt>
+   0x000000000000115d <+20>:    mov    $0x0,%eax
+   0x0000000000001162 <+25>:    pop    %rbp
+   0x0000000000001163 <+26>:    retq   

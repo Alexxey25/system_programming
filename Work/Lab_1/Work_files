@@ -1,0 +1,36 @@
+@Alexxey25 ➜ /workspaces/system_programming/Work (main) $ mkdir Work
+@Alexxey25 ➜ /workspaces/system_programming/Work (main) $ cd Work
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ mkdir "Лабораторная работа №1!"
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ mkdir "AAV"
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ chmod 772 "Лабораторная работа №1!"
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ chmod 200 'AAV'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ touch 'Text @1'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ touch 'Text \$2'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ touch 'Text #3'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ cat > 'Text @1'
+«Птица говорун отличается умом и сообразительностью!»
+«Отличается умом, отличается сообразительностью...»
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ cp 'Text @1' 'Text \$2'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ mv 'Text \$2' 'Лабораторная работа №1!'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ sudo cp 'Text @1' 'AAV'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ tar -cf MyAchiv.tar 'Text @1' 'Text #3'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ gzip 'Text @1'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ gzip 'Text #3'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ tar -cf MyAchiv.tar 'Text @1.gz' 'Text #3.gz'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ tar -tf MyAchiv.tar
+Text @1.gz
+Text #3.gz
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ head -n 1 'Text @1.gz' | cat - 'Text #3.gz' > temp && mv temp 'Text #3.gz'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ printf 'Будь осторожен! Преступник вооружен!\n' >> 'Text #3'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ sudo touch AAV/Result_one
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ sudo tac 'Text @1.gz' AAV/Result_one 
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ sudo mv AAV/Result_one AAV/Result_two
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ cd 'Лабораторная работа №1!'
+@Alexxey25 ➜ .../system_programming/Work/Work/Лабораторная работа №1! (main) $ sudo find ../AAV -name 'T*' -exec cat {} + >> 'Result_3'
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ cd 'Лабораторная работа №1!'
+@Alexxey25 ➜ .../system_programming/Work/Work/Лабораторная работа №1! (main) $ uname -a >> 'Result_3'
+@Alexxey25 ➜ .../system_programming/Work/Work/Лабораторная работа №1! (main) $ date >> 'Result_3'
+@Alexxey25 ➜ .../system_programming/Work/Work/Лабораторная работа №1! (main) $ cd ..
+@Alexxey25 ➜ /workspaces/system_programming/Work/Work (main) $ cd ..
+@Alexxey25 ➜ /workspaces/system_programming/Work (main) $ mkdir Lab_1
+@Alexxey25 ➜ /workspaces/system_programming/Work (main) $ touch Work_files
